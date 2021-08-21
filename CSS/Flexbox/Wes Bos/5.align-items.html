@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="style.css">
+	<style type="text/css">
+		.container {
+			min-height: 18vh;
+		}
+		.box {
+			font-size:20px;
+		}
+		.container.start{
+			align-items: flex-start;
+		}
+		.container.center {
+			display: flex;
+			align-items: center;
+
+		}
+		.container.baseline {
+			align-items: baseline;
+		}
+		.container.baseline .box1 {
+			font-size: 10px;
+		}
+		.container.baseline .box2 {
+			font-size: 35px;
+		}
+		.container.baseline .box3 {
+			font-size: 25px;
+		}
+		.container.baseline .box4 {
+			font-size: 20px;
+		}
+		.container.baseline .box5 {
+			font-size: 40px;
+		}
+		.container.end {
+			align-items: flex-end;
+		}
+
+	</style>
+	<title>Wes Bos - Flexbox</title>
+</head>
+<body>
+
+<span>align start</span>
+<div class="container start">
+	<div class="box box1">1</div>
+	<div class="box box2">2</div>
+	<div class="box box3">3</div>
+	<div class="box box4">4</div> 
+	<div class="box box5">5</div>
+	<div class="box box6">6</div>
+	<div class="box box7">7</div>
+	<div class="box box8">8</div>
+	<div class="box box9">9</div>
+	<div class="box box10">10</div>
+</div>
+<br/><br/>
+
+<span>align center</span>
+<div class="container center">
+	<div class="box box1">1</div>
+	<div class="box box2">2</div>
+	<div class="box box3">3</div>
+	<div class="box box4">4</div> 
+	<div class="box box5">5</div>
+	<div class="box box6">6</div>
+	<div class="box box7">7</div>
+	<div class="box box8">8</div>
+	<div class="box box9">9</div>
+	<div class="box box10">10</div>
+</div>
+<br/><br/>
+<span> aligne baseline</span>
+<div class="container baseline">
+	<div class="box box1">1</div>
+	<div class="box box2">2</div>
+	<div class="box box3">3</div>
+	<div class="box box4">4</div> 
+	<div class="box box5">5</div>
+	<div class="box box6">6</div>
+	<div class="box box7">7</div>
+	<div class="box box8">8</div>
+	<div class="box box9">9</div>
+	<div class="box box10">10</div>
+</div>
+<br/><br/>
+<span>align end</span>
+<div class="container end">
+	<div class="box box1">1</div>
+	<div class="box box2">2</div>
+	<div class="box box3">3</div>
+	<div class="box box4">4</div> 
+	<div class="box box5">5</div>
+	<div class="box box6">6</div>
+	<div class="box box7">7</div>
+	<div class="box box8">8</div>
+	<div class="box box9">9</div>
+	<div class="box box10">10</div>
+</div>
+
+</body>
+</html>
