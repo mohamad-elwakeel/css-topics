@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="style.css">
+	<style type="text/css">
+		.container{
+			display: flex;
+		}
+		.box {
+			font-size: 32px;
+		}
+		.with-flex .box{
+			flex: 1;
+		}
+		.with-flex-custom .box2{
+			flex: 2;
+		}
+		.with-flex-custom .box5{
+			flex: 3;
+		}
+	</style>
+	<title>Wes Bos - Flexbox - Flexbox Sizing</title>
+</head>
+<body>
+
+<span></span>
+
+<span>Without Flex Size</span>
+<div class="container without-flex">
+	<div class="box box1">one 😎</div>
+	<div class="box box2">two 🤢</div>
+	<div class="box box3">three 👍</div>
+	<div class="box box4">four 🥳</div> 
+	<div class="box box5">five 💘</div>
+	<div class="box box6">six 👺</div>
+</div>
+<br/><br/>
+
+<span>With Flex Size 1</span>
+<div class="container with-flex">
+	<div class="box box1">one 😎</div>
+	<div class="box box2">two 🤢</div>
+	<div class="box box3">three 👍</div>
+	<div class="box box4">four 🥳</div> 
+	<div class="box box5">five 💘</div>
+	<div class="box box6">six 👺</div>
+</div>
+<br/><br/>
+
+<span>With Flex Size 1 & box2: 2 and box5: 3</span>
+<div class="container with-flex-custom">
+	<div class="box box1">one 😎</div>
+	<div class="box box2">two 🤢</div>
+	<div class="box box3">three 👍</div>
+	<div class="box box4">four 🥳</div> 
+	<div class="box box5">five 💘</div>
+	<div class="box box6">six 👺</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>FlexBox - Joy Shaheb - Card Layout</title>
+
+  <style type="text/css">
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+* body {
+  font-family: sans-serif;
+  font-size: 35px;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.container {
+  display: flex;
+  gap: 4vh;
+  padding: 4vh;
+}
+@media (max-width: 480px) {
+  .container {
+    flex-direction: column;
+  }
+}
+
+[class^=block-] {
+  border: 1vh solid #48cae4;
+  border-radius: 10px;
+  height: 92vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 480px) {
+  [class^=block-] {
+    height: 42vh;
+  }
+}
+
+.block-1 {
+  flex-grow: 9;
+}
+
+.block-2 {
+  flex-grow: 1;
+}
+  </style>
+
+</head>
+<body>
+<div class="container">
+  <div class="block-1">Left</div>
+  <div class="block-2">Right</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>FlexBox Pricing Grid</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <style type="text/css">
+	html {
+	  box-sizing: border-box;
+	}
+
+	* {
+	  box-sizing: border-box;
+	}
+	*:before, *:after {
+	  box-sizing: inherit;
+	}
+
+	body {
+	  background-image: linear-gradient(260deg, #2376ae 0%, #c16ecf 100%);
+	  font-family: Arial, Helvetica, sans-serif;
+	  font-size: 0.8em;
+	  min-height: 100vh;
+	  margin: 0 auto;
+	  max-width: 100vw;
+	}
+
+	.wrapper, .pricing-grid {
+	  align-items: center;
+	  display: flex;
+	  margin: 0 auto;
+	  max-width: 750px;
+	}
+
+	.plan {
+	  background: rgba(255, 255, 255, 0.2);
+	  border-radius: 4px;
+	  display: flex;
+	  flex: 1;
+	  flex-wrap: wrap;
+	  margin: 20px;
+	  padding: 20px;
+	  text-align: center;
+	}
+	.plan > * {
+	  flex: 1 1 100%;
+	}
+	.plan a {
+	  background: #feff00;
+	  border-radius: 4px;
+	  color: black;
+	  padding: 10px;
+	  text-decoration: none;
+	}
+	.plan h2 {
+	  color: white;
+	  letter-spacing: 2px;
+	  text-shadow: 3px 3px 0 rgba(0, 0, 0, 0.1);
+	  text-transform: uppercase;
+	}
+	.plan ul {
+	  list-style: none;
+	  margin: 0;
+	  padding: 0;
+	}
+	.plan ul li {
+	  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+	  padding: 10px;
+	}
+	.plan ul li:last-child {
+	  border-bottom: 0;
+	}
+	.plan .cta {
+	  align-self: flex-end;
+	}
+
+	.price {
+	  font-size: 50px;
+	  margin: 10px 0;
+	}
+  </style>
+</head>
+
+<body>
+<div class="wrapper">
+      <div class="plan plan1">
+         <h2>Cat</h2>
+         <p>One of the worst house pets.</p>
+         <ul class="features">
+            <li>Scratches everything</li>
+            <li>Easily lost for days</li>
+            <li>Can be mean!</li>
+         </ul>
+         <p class="price">Free</p>
+         <a href="#" class="cta">Get it now!</a>
+      </div>
+      
+      <div class="plan plan2">
+         <h2>Dog</h2>
+        <p>A man's best friend! Why wouldn't you want one?!</p>
+         <ul class="types">
+            <li>Super fun!</li>
+            <li>Loves to play!</li>
+            <li>Loves to relax!</li>
+            <li>Not a cat</li>
+         </ul>
+         <p class="price">$100</p>
+         <a href="#" class="cta">Buy one now!</a>
+      </div>
+      
+      <div class="plan plan3">
+         <h2>Fish</h2>
+         <p>A fish, cool but still just a fish</p>
+         <ul class="types">
+            <li>Cheap</li>
+            <li>Doesn't do much</li>
+            <li>Prefers limited contact</li>
+         </ul>
+         <p class="price">$0.50</p>
+         <a href="#" class="cta">Buy now</a>
+      </div>
+</div>
+</body>
+</html>
